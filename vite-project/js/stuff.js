@@ -1,0 +1,5 @@
+const array [
+
+]
+
+export { array }
