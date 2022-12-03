@@ -1,0 +1,12 @@
+@import url(second.css);
+
+.heading {
+  background-color: pink;
+  height: 100vh;
+}
+
+.test{
+  background-color: aliceblue;
+  height: 100vh;
+  margin-top: 10px
+}
