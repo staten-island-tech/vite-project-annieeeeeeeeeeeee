@@ -1,0 +1,58 @@
+const menu = [
+  {
+    name: "tea",
+    category: "tea",
+    price: 347984,
+    poor: true,
+    cupIncluded: true,
+    cupFee: 0,
+    saucerIncluded: true,
+    saucerFee: 0,
+    spoonIncluded: false,
+    spoonFee: 2000,
+    refills: false,
+    img: "tea!.jpg",
+  },
+
+  {
+    name: "tea but better",
+    category: "tea",
+    price: 347984,
+    poor: false,
+    cupIncluded: false,
+    cupFee: 0,
+    saucerIncluded: true,
+    saucerFee: 0,
+    spoonIncluded: false,
+    spoonFee: 2000,
+    refills: true,
+    img: "tea but better.jpg",
+  },
+  {
+    name: "flowers",
+    category: "decorative",
+    price: 5000,
+    poor: true,
+    img: "flowers",
+  },
+  {
+    name: "strawberry tea sandwich",
+    category: "edibles",
+    price: 3438904,
+    shape: "triangle",
+    poor: false,
+    plateIncluded: true,
+    img: "strawberry.jpg",
+  },
+  {
+    name: "cucumber tea sandwich",
+    category: "edibles",
+    price: 3438904,
+    shape: "square",
+    poor: false,
+    plateIncluded: true,
+    img: "cucumber.jpg",
+  },
+];
+
+export { menu };
