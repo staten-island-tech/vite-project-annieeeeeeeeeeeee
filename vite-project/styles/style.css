@@ -5,8 +5,12 @@
   height: 100vh;
 }
 
-.test{
+.test {
   background-color: aliceblue;
   height: 100vh;
-  margin-top: 10px
+  margin-top: 10px;
+}
+
+:root {
+  --light-blue: #29998f;
 }
