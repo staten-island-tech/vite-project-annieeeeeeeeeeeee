@@ -1,16 +1,37 @@
 @import url(second.css);
+html,
+body,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%; /* 10px*/
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
 
-.heading {
-  background-color: pink;
-  height: 100vh;
+body {
+  background-color: #f4f3ee;
+}
+
+:root {
+  --h1: 11.089rem;
+  --cotton-candy-main: #bde0fe;
+}
+
+#heading {
+  font-size: var(--h1);
+  text-align: center;
+  padding-top: 5rem;
+  background-color: var(--cotton-candy-main);
+  height: 30rem;
+  font-family: "Monsieur La Doulaise", cursive;
+  font-weight: normal;
+  color: #000000;
 }
 
 .test {
   background-color: aliceblue;
   height: 100vh;
   margin-top: 10px;
-}
-
-:root {
-  --light-blue: #29998f;
 }
