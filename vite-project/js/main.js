@@ -5,10 +5,17 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
 AOS.init();
 
-document.getElementbyId("menu").insertAdjacentHtml(
+menu.forEach((e) => {
+  console.log(e.name);
+});
+
+DOMSelectors = {
+  display: document.getElementbyId("display"),
+};
+DOMSelectors.display.insertAdjacentHtml(
   "beforeend",
   `<div class="card">
-    <h2>${menu.name}</h2>
+    <h2>Hello</h2>
 </div>);`
 );
 

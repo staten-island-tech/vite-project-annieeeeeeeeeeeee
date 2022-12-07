@@ -57,14 +57,6 @@ const menu = [
     img: "coconut.jpg",
   },
   {
-    name: "coconut chiffon cake slice",
-    category: "edibles",
-    price: 63843.0,
-    poor: true,
-    refills: false,
-    img: "coconut.jpg",
-  },
-  {
     name: "whipped cream",
     category: "side",
     price: 433.0,
