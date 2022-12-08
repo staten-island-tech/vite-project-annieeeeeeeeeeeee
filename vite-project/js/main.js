@@ -7,16 +7,31 @@ AOS.init();
 
 menu.forEach((e) => {
   console.log(e.name);
+  const display = document.getElementById("display");
+  /*  display.insertAdjacentHTML(
+    "beforeend",
+    `<div class="card">
+    <h2>${e.name}</h2>
+</div>`
+  ); */
 });
 
-DOMSelectors = {
-  display: document.getElementbyId("display"),
-};
-DOMSelectors.display.insertAdjacentHtml(
-  "beforeend",
-  `<div class="card">
-    <h2>Hello</h2>
-</div>);`
-);
+//create an array of objects (menu)
+//creat efunction to inject menu item
 
-/*console.log(menu); */
+//function(item){
+//insert html
+//}
+//iterate(forEach) over array and insert HTMl
+// button event listen to filter
+//OOP object oreinted programming to encapstulate data/functions
+//dom object
+
+/* const getProducts = {
+  getjfeiwo: data
+    .filter
+}
+
+getProducts.getAllProducts
+getProducts.get...
+*/
