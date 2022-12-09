@@ -22,7 +22,7 @@ const menu = [
     price: 5000.0,
     poor: true,
     refills: true,
-    img: "flowers",
+    img: "flowers.jpg",
   },
   {
     name: "strawberry tea sandwich",

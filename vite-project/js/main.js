@@ -5,16 +5,28 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
 AOS.init();
 
-menu.forEach((e) => {
-  console.log(e.name);
-  const display = document.getElementById("display");
-  /*  display.insertAdjacentHTML(
-    "beforeend",
-    `<div class="card">
-    <h2>${e.name}</h2>
-</div>`
-  ); */
-});
+const DOMSelectors = {
+  display: document.getElementById("display"),
+};
+
+function item() {
+  menu.forEach((e) => {
+    DOMSelectors.display.insertAdjacentHTML(
+      "beforeend",
+      `<div class="card">
+    <h2 class="name">${e.name}</h2>
+    <div class="img-container"><img src="${e.img}" class="img" /></div>
+    
+  </div>`
+    );
+  });
+}
+
+item();
+
+//function item(tea) {}
+
+//const getProducts = {};
 
 //create an array of objects (menu)
 //creat efunction to inject menu item
