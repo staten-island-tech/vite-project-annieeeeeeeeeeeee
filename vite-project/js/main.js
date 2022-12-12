@@ -14,10 +14,19 @@ function item() {
     DOMSelectors.display.insertAdjacentHTML(
       "beforeend",
       `<div class="card">
-    <h2 class="name">${e.name}</h2>
-    <div class="img-container"><img src="${e.img}" class="img" /></div>
-    
-  </div>`
+      <div class="container">
+        <div class="card-front">
+          <h2 class="name">${e.name}</h2>
+          <div class="img-container"><img src="${e.img}" class="img" /></div>
+        </div>
+        <div class="card-back">
+          <h2 class="name-back">${e.name}</h2>
+          <p class="price">$${e.price}.00</p>
+          <p class="description">${e.description}</p>
+        </div>
+      </div>
+      </div>
+        `
     );
   });
 }
