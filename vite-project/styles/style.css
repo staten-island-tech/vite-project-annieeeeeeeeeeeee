@@ -11,27 +11,34 @@ body,
 }
 
 body {
-  background-color: var(--beige-mom-background);
+  background-color: var(--secondary);
 }
 
 :root {
   --h1: 11.089rem;
-  --cotton-candy-main: #bde0fe;
+  /*   --cotton-candy-main: #bde0fe;
   --beige-mom-main: #d5bdaf;
   --beige-mom-light: #f5ebe0;
   --beige-mom-backgorund: #edede9;
-  --beige-mom-secondary: #d5bdaf;
+  --beige-mom-secondary: #d5bdaf; */
+  --primary: #bb010b;
+  --secondary: #f8edeb;
+}
+
+.instagramBeigeMomTheme {
+  --primary: #edede9;
+  --secondary: #f5ebe0;
 }
 
 #heading {
   font-size: var(--h1);
   text-align: center;
   padding-top: 5rem;
-  background-color: var(--beige-mom-light);
+  background-color: var(--primary);
   height: 30rem;
   font-family: "Monsieur La Doulaise", cursive;
   font-weight: normal;
-  color: #000000;
+  color: var(--secondary);
   border: 1px;
   border-color: black;
 }
@@ -96,6 +103,7 @@ body {
 .name-back {
   font-family: "Monsieur La Doulaise", cursive;
   margin-top: 2rem;
+  color: var(--primary);
 }
 
 .price {
