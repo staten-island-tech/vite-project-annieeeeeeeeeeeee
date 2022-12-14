@@ -7,9 +7,9 @@ AOS.init();
 
 const DOMSelectors = {
   display: document.getElementById("display"),
+  teaFilter: document.getElementById("tea"),
 };
-
-function item() {
+function everything() {
   menu.forEach((e) => {
     DOMSelectors.display.insertAdjacentHTML(
       "beforeend",
@@ -31,7 +31,20 @@ function item() {
   });
 }
 
-item();
+everything();
+
+function teaOnly() {
+  menu
+    .filter((e) => (e.category = "tea"))
+    .forEach((e) => {
+      e.item();
+    });
+}
+
+DOMSelectors.teaFilter.addEventListener("click", function (e) {
+  e.preventDefault();
+  teaOnly();
+});
 
 //function item(tea) {}
 
