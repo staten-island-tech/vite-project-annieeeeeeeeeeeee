@@ -9,6 +9,7 @@ const DOMSelectors = {
   display: document.getElementById("display"),
   teaFilter: document.getElementById("tea"),
 };
+
 function everything() {
   menu.forEach((e) => {
     DOMSelectors.display.insertAdjacentHTML(
@@ -21,8 +22,9 @@ function everything() {
         </div>
         <div class="card-back">
           <h2 class="name-back">${e.name}</h2>
-          <p class="price">$${e.price}.00</p>
           <p class="description">${e.description}</p>
+          <p class="price">$${e.price}.00</p>
+  
         </div>
       </div>
       </div>
@@ -37,13 +39,14 @@ function teaOnly() {
   menu
     .filter((e) => (e.category = "tea"))
     .forEach((e) => {
-      e.item();
+      everything();
     });
 }
 
 DOMSelectors.teaFilter.addEventListener("click", function (e) {
   e.preventDefault();
   teaOnly();
+  console.log(hy);
 });
 
 //function item(tea) {}

@@ -60,7 +60,7 @@ body {
   font-weight: 500;
   height: 40px;
   padding: 10px 16px;
-  margin-top: 2rem; */
+  margin-top: 2rem;
 }
 
 #display {
@@ -116,7 +116,7 @@ body {
 
 .name-back {
   font-family: "Monsieur La Doulaise", cursive;
-  margin-top: 2rem;
+  margin-top: 4rem;
   color: var(--primary);
 }
 
@@ -126,7 +126,9 @@ body {
 }
 
 .description {
-  font-size: 3rem;
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 2rem;
 }
 
 .img {
