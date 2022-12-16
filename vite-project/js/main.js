@@ -11,6 +11,7 @@ const DOMSelectors = {
 };
 
 function everything() {
+  DOMSelectors.display.innerHTML = " ";
   menu.forEach((e) => {
     DOMSelectors.display.insertAdjacentHTML(
       "beforeend",
@@ -37,16 +38,31 @@ everything();
 
 function teaOnly() {
   menu
-    .filter((e) => (e.category = "tea"))
+    .filter((e) => e.category === "tea")
     .forEach((e) => {
-      everything();
+      DOMSelectors.display.insertAdjacentHTML(
+        "beforeend",
+        `<div class="card">
+        <div class="container">
+          <div class="card-front">
+            <h2 class="name">${e.name}</h2>
+            <div class="img-container"><img src="${e.img}" class="img" /></div>
+          </div>
+          <div class="card-back">
+            <h2 class="name-back">${e.name}</h2>
+            <p class="description">${e.description}</p>
+            <p class="price">$${e.price}.00</p>
+    
+          </div>
+        </div>
+        </div>
+          `
+      );
     });
 }
 
-DOMSelectors.teaFilter.addEventListener("click", function (e) {
-  e.preventDefault();
+DOMSelectors.teaFilter.addEventListener("click", function () {
   teaOnly();
-  console.log(hy);
 });
 
 //function item(tea) {}

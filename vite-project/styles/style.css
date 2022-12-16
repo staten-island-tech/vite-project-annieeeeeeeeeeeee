@@ -50,7 +50,7 @@ body {
   margin: auto;
   align-items: flex-start;
 }
-.tea {
+#tea {
   /* background-color: var(--primary);
   border-radius: 8px;
   border-style: none;
