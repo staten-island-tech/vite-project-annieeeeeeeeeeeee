@@ -37,7 +37,7 @@ function everything() {
 
 everything();
 
-function teaOnly() {
+/* function teaOnly() {
   DOMSelectors.display.innerHTML = " ";
   menu
     .filter((e) => e.category === "tea")
@@ -96,3 +96,4 @@ function ediblesOnly() {
 DOMSelectors.foodFilter.addEventListener("click", function () {
   ediblesOnly();
 });
+ */
