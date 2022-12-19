@@ -8,10 +8,11 @@ AOS.init();
 const DOMSelectors = {
   display: document.getElementById("display"),
   teaFilter: document.getElementById("tea"),
+  foodFilter: document.getElementById("food"),
+  sidesFilter: document.getElemenyById("sides"),
 };
 
 function everything() {
-  DOMSelectors.display.innerHTML = " ";
   menu.forEach((e) => {
     DOMSelectors.display.insertAdjacentHTML(
       "beforeend",
@@ -37,6 +38,7 @@ function everything() {
 everything();
 
 function teaOnly() {
+  DOMSelectors.display.innerHTML = " ";
   menu
     .filter((e) => e.category === "tea")
     .forEach((e) => {
@@ -65,26 +67,32 @@ DOMSelectors.teaFilter.addEventListener("click", function () {
   teaOnly();
 });
 
-//function item(tea) {}
-
-//const getProducts = {};
-
-//create an array of objects (menu)
-//creat efunction to inject menu item
-
-//function(item){
-//insert html
-//}
-//iterate(forEach) over array and insert HTMl
-// button event listen to filter
-//OOP object oreinted programming to encapstulate data/functions
-//dom object
-
-/* const getProducts = {
-  getjfeiwo: data
-    .filter
+function ediblesOnly() {
+  DOMSelectors.display.innerHTML = " ";
+  menu
+    .filter((e) => e.category === "edibles")
+    .forEach((e) => {
+      DOMSelectors.display.insertAdjacentHTML(
+        "beforeend",
+        `<div class="card">
+        <div class="container">
+          <div class="card-front">
+            <h2 class="name">${e.name}</h2>
+            <div class="img-container"><img src="${e.img}" class="img" /></div>
+          </div>
+          <div class="card-back">
+            <h2 class="name-back">${e.name}</h2>
+            <p class="description">${e.description}</p>
+            <p class="price">$${e.price}.00</p>
+    
+          </div>
+        </div>
+        </div>
+          `
+      );
+    });
 }
 
-getProducts.getAllProducts
-getProducts.get...
-*/
+DOMSelectors.foodFilter.addEventListener("click", function () {
+  ediblesOnly();
+});

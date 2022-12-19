@@ -1,4 +1,3 @@
-@import url(second.css);
 html,
 body,
 * {
@@ -50,7 +49,7 @@ body {
   margin: auto;
   align-items: flex-start;
 }
-#tea {
+.button {
   /* background-color: var(--primary);
   border-radius: 8px;
   border-style: none;
