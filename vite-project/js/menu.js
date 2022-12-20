@@ -6,7 +6,7 @@ const menu = [
     price: 347984.0,
     poor: true,
     refills: false,
-    img: "/tea!.jpg",
+    img: "tea!.jpg",
   },
 
   {
@@ -16,7 +16,7 @@ const menu = [
     price: 3479842.0,
     poor: false,
     refills: true,
-    img: "/tea but better.jpg",
+    img: "tea but better.jpg",
   },
   {
     name: "Flowers",
@@ -25,7 +25,7 @@ const menu = [
     price: 5000.0,
     poor: true,
     refills: true,
-    img: "/flowers.jpg",
+    img: "flowers.jpg",
   },
   {
     name: "Strawberry Tea Sandwich",
@@ -35,7 +35,7 @@ const menu = [
     price: 3438904.0,
     poor: false,
     refills: false,
-    img: "/strawberry.jpg",
+    img: "strawberry.jpg",
   },
   {
     name: "Cucumber Tea Sandwich",
@@ -45,7 +45,7 @@ const menu = [
     price: 3438904.0,
     poor: false,
     refills: false,
-    img: "/cucumber.jpg",
+    img: "cucumber.jpg",
   },
   {
     name: "Vanilla Cream Scones",
@@ -54,7 +54,7 @@ const menu = [
     price: 3438904.0,
     poor: false,
     refills: false,
-    img: "/scones.jpg",
+    img: "scones.jpg",
   },
   {
     name: "Coconut Chiffon Cake Slice",
@@ -64,7 +64,7 @@ const menu = [
     price: 63843.0,
     poor: true,
     refills: false,
-    img: "/coconut.jpg",
+    img: "coconut.jpg",
   },
   {
     name: "Whipped Cream",
@@ -73,7 +73,7 @@ const menu = [
     price: 433.0,
     poor: true,
     refills: true,
-    img: "/whipped cream.jpg",
+    img: "whipped cream.jpg",
   },
   {
     name: "Clotted Cream",
@@ -82,7 +82,7 @@ const menu = [
     price: 433.0,
     poor: true,
     refills: false,
-    img: "/clotted.jpg",
+    img: "clotted.jpg",
   },
   {
     name: "Strawberry Jam",
@@ -92,7 +92,7 @@ const menu = [
     price: 433.0,
     poor: true,
     refills: false,
-    img: "/jam.jpg",
+    img: "jam.jpg",
   },
 ];
 
