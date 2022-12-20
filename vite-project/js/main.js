@@ -8,8 +8,10 @@ AOS.init();
 const DOMSelectors = {
   display: document.getElementById("display"),
   teaFilter: document.getElementById("tea"),
-  teaFilter: document.getElementById("tea"),
-  teaFilter: document.getElementById("tea"),
+  foodFilter: document.getElementById("edibles"),
+  sideFilter: document.getElementById("sides"),
+  default: document.getElementById("default"),
+  theme: document.querySelector(".themeBtn"),
 };
 
 function everything() {
@@ -37,7 +39,7 @@ function everything() {
 
 everything();
 
-/* function teaOnly() {
+function teaOnly() {
   DOMSelectors.display.innerHTML = " ";
   menu
     .filter((e) => e.category === "tea")
@@ -96,4 +98,47 @@ function ediblesOnly() {
 DOMSelectors.foodFilter.addEventListener("click", function () {
   ediblesOnly();
 });
- */
+
+function sidesOnly() {
+  DOMSelectors.display.innerHTML = " ";
+  menu
+    .filter((e) => e.category === "side")
+    .forEach((e) => {
+      DOMSelectors.display.insertAdjacentHTML(
+        "beforeend",
+        `<div class="card">
+        <div class="container">
+          <div class="card-front">
+            <h2 class="name">${e.name}</h2>
+            <div class="img-container"><img src="${e.img}" class="img" /></div>
+          </div>
+          <div class="card-back">
+            <h2 class="name-back">${e.name}</h2>
+            <p class="description">${e.description}</p>
+            <p class="price">$${e.price}.00</p>
+    
+          </div>
+        </div>
+        </div>
+          `
+      );
+    });
+}
+
+DOMSelectors.sideFilter.addEventListener("click", function () {
+  sidesOnly();
+});
+
+function reset() {
+  DOMSelectors.display.innerHTML = " ";
+  everything();
+}
+
+DOMSelectors.default.addEventListener("click", function () {
+  reset();
+});
+
+DOMSelectors.theme.addEventListener("click", function () {
+  console.log("yes");
+  document.body.classList.add("pink");
+});
