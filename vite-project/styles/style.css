@@ -11,29 +11,18 @@ body,
 }
 
 body {
-  background-color: var(--background);
+  background-color: var(--secondary);
 }
 
 :root {
   --h1: 11.089rem;
   --primary: #bb010b;
-  --background: #f8edeb;
-  --mainText: #bb010b;
-  --heading: #f8edeb;
+  --secondary: #f8edeb;
 }
 
-.pinkTheme {
-  --primary: #f8cbcb;
-  --background: #ffffff;
-  --mainText: #301315;
-  --heading: #301314;
-}
-
-.redTheme {
-  --primary: #bb010b;
-  --background: #f8edeb;
-  --mainText: #bb010b;
-  --heading: #f8edeb;
+.instagramBeigeMomTheme {
+  --primary: #edede9;
+  --secondary: #f5ebe0;
 }
 
 #heading {
@@ -44,18 +33,9 @@ body {
   height: 30rem;
   font-family: "Monsieur La Doulaise", cursive;
   font-weight: normal;
-  color: var(--heading);
+  color: var(--secondary);
   border: 1px;
   border-color: black;
-}
-
-.theme {
-  position: absolute;
-  right: 3px;
-  top: 0;
-  background-color: var(--primary);
-  border-radius: 8px;
-  color: #ffffff;
 }
 
 .filters {
@@ -76,11 +56,6 @@ body {
   width: 10rem;
   padding: 10px 16px;
   margin-top: 2rem;
-  text-align: center;
-}
-
-.button:hover {
-  background-color: #8c060d;
 }
 
 .button:hover{
@@ -97,10 +72,7 @@ body {
   flex-wrap: wrap;
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> bc264cc3fb3e871e74fc8c0eee64233309f34e89
 .card {
   margin-top: 6rem;
   font-size: 10rem;
@@ -117,7 +89,7 @@ body {
 .name-back {
   font-family: "Monsieur La Doulaise", cursive;
   margin-top: 4rem;
-  color: var(--mainText);
+  color: var(--primary);
 }
 
 .price {
