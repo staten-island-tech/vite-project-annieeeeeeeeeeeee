@@ -8,11 +8,13 @@ AOS.init();
 const DOMSelectors = {
   display: document.getElementById("display"),
   teaFilter: document.getElementById("tea"),
-  foodFilter: document.getElementById("food"),
-  sidesFilter: document.getElemenyById("sides"),
+  foodFilter: document.getElementById("edibles"),
+  default: document.getElementById("default"),
+  theme: document.querySelector(".theme"),
 };
 
 function everything() {
+  DOMSelectors.display.innerHTML = " ";
   menu.forEach((e) => {
     DOMSelectors.display.insertAdjacentHTML(
       "beforeend",
@@ -37,8 +39,8 @@ function everything() {
 
 everything();
 
-/* function teaOnly() {
-  DOMSelectors.display.innerHTML = " ";
+function teaOnly() {
+  DOMSelectors.display.innerHTML = "";
   menu
     .filter((e) => e.category === "tea")
     .forEach((e) => {
@@ -67,8 +69,8 @@ DOMSelectors.teaFilter.addEventListener("click", function () {
   teaOnly();
 });
 
-function ediblesOnly() {
-  DOMSelectors.display.innerHTML = " ";
+function foodOnly() {
+  DOMSelectors.display.innerHTML = "";
   menu
     .filter((e) => e.category === "edibles")
     .forEach((e) => {
@@ -94,6 +96,19 @@ function ediblesOnly() {
 }
 
 DOMSelectors.foodFilter.addEventListener("click", function () {
-  ediblesOnly();
+  foodOnly();
 });
- */
+
+function reset() {
+  DOMSelectors.display.innerHTML = "";
+  everything();
+}
+
+DOMSelectors.default.addEventListener("click", function () {
+  reset();
+});
+
+DOMSelectors.theme.addEventListener("click", function () {
+  console.log("yes");
+  document.body.classList.add("pinkTheme");
+});
