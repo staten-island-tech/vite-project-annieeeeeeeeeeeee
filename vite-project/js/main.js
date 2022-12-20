@@ -8,8 +8,8 @@ AOS.init();
 const DOMSelectors = {
   display: document.getElementById("display"),
   teaFilter: document.getElementById("tea"),
-  foodFilter: document.getElementById("food"),
-  sidesFilter: document.getElemenyById("sides"),
+  teaFilter: document.getElementById("tea"),
+  teaFilter: document.getElementById("tea"),
 };
 
 function everything() {
