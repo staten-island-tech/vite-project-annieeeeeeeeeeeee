@@ -1,4 +1,5 @@
 .container {
+<<<<<<< HEAD
     position: relative;
     width: 100%;
     height: 100%;
@@ -25,3 +26,31 @@
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
   }
+=======
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 2.5rem;
+  border: 1px solid;
+  border-color: black;
+}
+
+.card:hover .container {
+  transform: rotateY(180deg);
+  border-radius: 2.5rem;
+  border: 1px solid;
+  border-color: black;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+>>>>>>> bc264cc3fb3e871e74fc8c0eee64233309f34e89

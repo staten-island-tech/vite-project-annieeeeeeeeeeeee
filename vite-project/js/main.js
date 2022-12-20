@@ -8,9 +8,15 @@ AOS.init();
 const DOMSelectors = {
   display: document.getElementById("display"),
   teaFilter: document.getElementById("tea"),
+<<<<<<< HEAD
   edibles: document.getElementById("edibles"),
   sidesFilter: document.getElementById("sides"),
   all: document.getElementById("default"),
+=======
+  foodFilter: document.getElementById("edibles"),
+  default: document.getElementById("default"),
+  theme: document.querySelector(".theme"),
+>>>>>>> bc264cc3fb3e871e74fc8c0eee64233309f34e89
 };
 
 function everything() {
@@ -39,10 +45,13 @@ function everything() {
 
 everything();
 
+<<<<<<< HEAD
 DOMSelectors.all.addEventListener("click", function () {
   everything();
 });
 
+=======
+>>>>>>> bc264cc3fb3e871e74fc8c0eee64233309f34e89
 function teaOnly() {
   DOMSelectors.display.innerHTML = "";
   menu
@@ -99,6 +108,7 @@ function foodOnly() {
     });
 }
 
+<<<<<<< HEAD
 DOMSelectors.edibles.addEventListener("click", function () {
   foodOnly();
 });
@@ -131,4 +141,22 @@ function sideOnly() {
 
 DOMSelectors.sidesFilter.addEventListener("click", function () {
   sideOnly();
+=======
+DOMSelectors.foodFilter.addEventListener("click", function () {
+  foodOnly();
+});
+
+function reset() {
+  DOMSelectors.display.innerHTML = "";
+  everything();
+}
+
+DOMSelectors.default.addEventListener("click", function () {
+  reset();
+});
+
+DOMSelectors.theme.addEventListener("click", function () {
+  console.log("yes");
+  document.body.classList.add("pinkTheme");
+>>>>>>> bc264cc3fb3e871e74fc8c0eee64233309f34e89
 });
