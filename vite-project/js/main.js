@@ -138,7 +138,20 @@ DOMSelectors.default.addEventListener("click", function () {
   reset();
 });
 
-DOMSelectors.theme.addEventListener("click", function () {
+/* DOMSelectors.theme.addEventListener("click", function () {
   console.log("yes");
   document.body.classList.add("pink");
+  DOMSelectors.theme.innerHTML = "red";
+});
+ */
+DOMSelectors.theme.addEventListener("click", function () {
+  if (document.body.classList.contains("red")) {
+    document.body.classList.add("pink");
+    document.body.classList.remove("red");
+    document.theme.innerHTML = "pink";
+  } else {
+    document.body.classList.add("red");
+    document.body.classList.remove("pink");
+    document.theme.innerHTML = "red";
+  }
 });
