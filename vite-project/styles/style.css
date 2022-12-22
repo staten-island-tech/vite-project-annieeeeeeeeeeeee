@@ -53,7 +53,6 @@ body {
   border-color: black;
 }
 
-
 #display {
   display: flex;
   justify-content: space-around;
@@ -62,6 +61,7 @@ body {
   align-items: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
+  padding-bottom: 10rem;
 }
 
 .card {
@@ -70,11 +70,11 @@ body {
   height: 52.6rem;
   width: 45rem;
   border-radius: 2rem;
-
 }
 
 .card-back {
   font-size: 10rem;
+  font-family: "Lato", sans-serif;
   transform: rotateY(180deg);
 }
 
@@ -85,9 +85,11 @@ body {
 }
 
 .description {
-  margin-top: 3rem;
+  margin-top: 6rem;
   text-align: center;
   font-size: 2rem;
+  width: 35rem;
+  margin: auto;
 }
 
 .img {
@@ -99,7 +101,7 @@ body {
 }
 
 .img-container {
-  height:38rem;
+  height: 38rem;
   width: 44.8rem;
 }
 
@@ -108,7 +110,7 @@ body {
   margin-bottom: 2rem;
   text-align: left;
   margin-left: 2rem;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: normal;
 }
 .price {
@@ -116,6 +118,6 @@ body {
   margin-bottom: 2rem;
   text-align: left;
   margin-left: 2rem;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: bold;
 }

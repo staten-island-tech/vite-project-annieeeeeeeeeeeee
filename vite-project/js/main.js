@@ -10,7 +10,7 @@ function HTML(menu) {
   DOMSelectors.display.insertAdjacentHTML(
     "beforeend",
     `<div class="card">
-    <div class="container">
+    <div data-aos="fade-up" class="container">
       <div class="card-front">
         <div class="img-container"><img src="${menu.img}" class="img" /></div>
         <h2 class="name">${menu.name}</h2>
@@ -19,8 +19,6 @@ function HTML(menu) {
       <div class="card-back">
         <h2 class="name-back">${menu.name}</h2>
         <p class="description">${menu.description}</p>
-        
-
       </div>
     </div>
     </div>
