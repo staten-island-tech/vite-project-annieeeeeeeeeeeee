@@ -1,4 +1,5 @@
 @import url(animation.css);
+@import url(buttons.css);
 
 html,
 body,
@@ -26,14 +27,17 @@ body {
   --background: white;
   --heading: #491f18;
   --mainText: #491f18;
+  --other-primary: #bb010b;
+  --other-text: #f8edeb;
 }
 
 .red {
   --primary: #bb010b;
-  --secondary: #f8edeb;
   --background: #f8edeb;
   --mainText: #bb010b;
   --heading: #f8edeb;
+  --other-primary: #f8cbcb;
+  --other-text: #491f18;
 }
 
 #heading {
@@ -48,41 +52,7 @@ body {
   border: 1px;
   border-color: black;
 }
-.themeBtn {
-  position: absolute;
-  right: 2rem;
-  top: 2rem;
-  background-color: #ffffff;
-  border-radius: 10px;
-  color: var(--mainText);
-  font-size: 14px;
-  height: 32px;
-  padding: 10px 10px;
-  width: 50px;
-}
 
-.filters {
-  /* display: flex;
-  justify-content: space-around;
-  width: 85%;
-  margin: auto;
-  align-items: flex-start; */
-  margin-left: 20rem;
-}
-.button {
-  background-color: var(--background);
-  border-radius: 17px;
-  color: var(--mainText);
-  font-size: 14px;
-  height: 35px;
-  width: 80px;
-  margin-top: 6rem;
-  border: 1px solid black;
-}
-
-.button:hover {
-  background-image: linear-gradient(rgb(0 0 0/10%) 0 0);
-}
 
 #display {
   display: flex;
@@ -100,6 +70,7 @@ body {
   height: 52.6rem;
   width: 45rem;
   border-radius: 2rem;
+
 }
 
 .card-back {
@@ -113,11 +84,6 @@ body {
   color: var(--mainText);
 }
 
-.price {
-  margin-top: 3rem;
-  font-size: 3rem;
-}
-
 .description {
   margin-top: 3rem;
   text-align: center;
@@ -126,20 +92,30 @@ body {
 
 .img {
   width: 44.8rem;
-  height: 45.6rem;
-  border-bottom-left-radius: 2.5rem;
-  border-bottom-right-radius: 2.5rem;
+  height: 38rem;
+  border-top-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
   object-fit: cover;
 }
 
 .img-container {
-  height: 45rem;
+  height:38rem;
   width: 44.8rem;
-  border-bottom-left-radius: 2.5rem;
-  border-bottom-right-radius: 2.5rem;
 }
 
 .name {
   margin-top: 2rem;
   margin-bottom: 2rem;
+  text-align: left;
+  margin-left: 2rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+}
+.price {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: left;
+  margin-left: 2rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
 }

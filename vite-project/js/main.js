@@ -1,39 +1,36 @@
 import "../styles/style.css";
 import { menu } from "./menu";
+import { DOMSelectors } from "./dom";
 import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
-// ..
+import "aos/dist/aos.css";
+
 AOS.init();
 
-const DOMSelectors = {
-  display: document.getElementById("display"),
-  teaFilter: document.getElementById("tea"),
-  foodFilter: document.getElementById("edibles"),
-  sideFilter: document.getElementById("sides"),
-  default: document.getElementById("default"),
-  theme: document.querySelector(".themeBtn"),
-};
+function HTML(menu) {
+  DOMSelectors.display.insertAdjacentHTML(
+    "beforeend",
+    `<div class="card">
+    <div class="container">
+      <div class="card-front">
+        <div class="img-container"><img src="${menu.img}" class="img" /></div>
+        <h2 class="name">${menu.name}</h2>
+        <p class="price">$${menu.price}.00</p>
+      </div>
+      <div class="card-back">
+        <h2 class="name-back">${menu.name}</h2>
+        <p class="description">${menu.description}</p>
+        
+
+      </div>
+    </div>
+    </div>
+      `
+  );
+}
 
 function everything() {
   menu.forEach((e) => {
-    DOMSelectors.display.insertAdjacentHTML(
-      "beforeend",
-      `<div class="card">
-      <div class="container">
-        <div class="card-front">
-          <h2 class="name">${e.name}</h2>
-          <div class="img-container"><img src="${e.img}" class="img" /></div>
-        </div>
-        <div class="card-back">
-          <h2 class="name-back">${e.name}</h2>
-          <p class="description">${e.description}</p>
-          <p class="price">$${e.price}.00</p>
-  
-        </div>
-      </div>
-      </div>
-        `
-    );
+    HTML(e);
   });
 }
 
@@ -44,24 +41,7 @@ function teaOnly() {
   menu
     .filter((e) => e.category === "tea")
     .forEach((e) => {
-      DOMSelectors.display.insertAdjacentHTML(
-        "beforeend",
-        `<div class="card">
-        <div class="container">
-          <div class="card-front">
-            <h2 class="name">${e.name}</h2>
-            <div class="img-container"><img src="${e.img}" class="img" /></div>
-          </div>
-          <div class="card-back">
-            <h2 class="name-back">${e.name}</h2>
-            <p class="description">${e.description}</p>
-            <p class="price">$${e.price}.00</p>
-    
-          </div>
-        </div>
-        </div>
-          `
-      );
+      HTML(e);
     });
 }
 
@@ -74,24 +54,7 @@ function ediblesOnly() {
   menu
     .filter((e) => e.category === "edibles")
     .forEach((e) => {
-      DOMSelectors.display.insertAdjacentHTML(
-        "beforeend",
-        `<div class="card">
-        <div class="container">
-          <div class="card-front">
-            <h2 class="name">${e.name}</h2>
-            <div class="img-container"><img src="${e.img}" class="img" /></div>
-          </div>
-          <div class="card-back">
-            <h2 class="name-back">${e.name}</h2>
-            <p class="description">${e.description}</p>
-            <p class="price">$${e.price}.00</p>
-    
-          </div>
-        </div>
-        </div>
-          `
-      );
+      HTML(e);
     });
 }
 
@@ -104,24 +67,7 @@ function sidesOnly() {
   menu
     .filter((e) => e.category === "side")
     .forEach((e) => {
-      DOMSelectors.display.insertAdjacentHTML(
-        "beforeend",
-        `<div class="card">
-        <div class="container">
-          <div class="card-front">
-            <h2 class="name">${e.name}</h2>
-            <div class="img-container"><img src="${e.img}" class="img" /></div>
-          </div>
-          <div class="card-back">
-            <h2 class="name-back">${e.name}</h2>
-            <p class="description">${e.description}</p>
-            <p class="price">$${e.price}.00</p>
-    
-          </div>
-        </div>
-        </div>
-          `
-      );
+      HTML(e);
     });
 }
 
@@ -138,20 +84,20 @@ DOMSelectors.default.addEventListener("click", function () {
   reset();
 });
 
-/* DOMSelectors.theme.addEventListener("click", function () {
+DOMSelectors.theme.addEventListener("click", function () {
   console.log("yes");
   document.body.classList.add("pink");
   DOMSelectors.theme.innerHTML = "red";
 });
- */
+
 DOMSelectors.theme.addEventListener("click", function () {
   if (document.body.classList.contains("red")) {
     document.body.classList.add("pink");
     document.body.classList.remove("red");
-    document.theme.innerHTML = "pink";
+    DOMSelectors.theme.innerHTML = "Red!";
   } else {
     document.body.classList.add("red");
     document.body.classList.remove("pink");
-    document.theme.innerHTML = "red";
+    DOMSelectors.theme.innerHTML = "Pink!";
   }
 });

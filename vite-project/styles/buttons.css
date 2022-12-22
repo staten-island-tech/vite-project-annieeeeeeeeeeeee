@@ -1,0 +1,49 @@
+.themeBtn {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    background-color: var(--background);
+    border-radius: 17px;
+    color: var(--mainText);
+    font-size: 14px;
+    height: 35px;
+    width: 80px;
+    border: 1px solid black;
+  }
+
+  .themeBtn:hover{
+    background-color: var(--other-primary);
+    color: var(--other-text);
+    transition: 0.7s;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    width: 18%;
+    margin: auto;
+    align-items: flex-start; 
+    margin-left: 22rem;
+  }
+  
+  
+  #default{
+    position: absolute;
+    top: 30rem;
+    right: 25rem;
+  }
+  
+  .button {
+    background-color: var(--background);
+    border-radius: 17px;
+    color: var(--mainText);
+    font-size: 14px;
+    height: 35px;
+    width: 80px;
+    margin-top: 6rem;
+    border: 1px solid black;
+  }
+  
+  .button:hover {
+    background-image: linear-gradient(rgb(0 0 0/10%) 0 0);
+  }

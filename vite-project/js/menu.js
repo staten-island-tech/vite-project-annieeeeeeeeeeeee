@@ -21,7 +21,7 @@ const menu = [
   {
     name: "Flowers",
     category: "decorative",
-    description: "flowers in your tea makes it smell and look nice",
+    description: "these are useless but they look nice",
     price: 5000.0,
     poor: true,
     refills: true,
