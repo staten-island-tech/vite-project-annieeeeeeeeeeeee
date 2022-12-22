@@ -47,7 +47,6 @@ body {
   background-color: var(--primary);
   height: 30rem;
   font-family: "Monsieur La Doulaise", cursive;
-  font-weight: normal;
   color: var(--heading);
   border: 1px;
   border-color: black;
