@@ -8,6 +8,8 @@ body,
   margin: 0;
   box-sizing: border-box;
   font-size: 62.5%; /* 10px*/
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
