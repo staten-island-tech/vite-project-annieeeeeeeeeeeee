@@ -1,8 +1,8 @@
 import "../styles/style.css";
 import { menu } from "./menu";
 import { DOMSelectors } from "./dom";
-import AOS from "aos";
-import "aos/dist/aos.css";
+/* import AOS from "aos";
+import "aos/dist/aos.css"; */
 
 AOS.init();
 
@@ -10,7 +10,7 @@ function HTML(menu) {
   DOMSelectors.display.insertAdjacentHTML(
     "beforeend",
     `<div class="card">
-    <div data-aos="fade-up" class="container">
+    <div class="container">
       <div class="card-front">
         <div class="img-container"><img src="${menu.img}" class="img" /></div>
         <h2 class="name">${menu.name}</h2>
