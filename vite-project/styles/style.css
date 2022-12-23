@@ -50,6 +50,7 @@ body {
   color: var(--heading);
   border: 1px;
   border-color: black;
+  font-weight: normal;
 }
 
 #display {
