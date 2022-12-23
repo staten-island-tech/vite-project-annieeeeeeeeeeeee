@@ -4,7 +4,7 @@ import { DOMSelectors } from "./dom";
 /* import AOS from "aos";
 import "aos/dist/aos.css"; */
 
-AOS.init();
+//AOS.init();
 
 function HTML(menu) {
   DOMSelectors.display.insertAdjacentHTML(
